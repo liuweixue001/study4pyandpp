@@ -68,8 +68,6 @@
         "optional": "cpp",
         "string_view": "cpp",
         "fstream": "cpp",
-        "sstream": "cpp",
-        "functional": "cpp",
-        "map": "cpp"
+        "sstream": "cpp"
     }
 }
