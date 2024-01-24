@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+/*移除数组中的指定元素*/
+
 int removeElement(std::vector<int>& nums, int val) {
     int n = nums.size();
     int index = 0; // 慢指针，指向不等于val的元素
