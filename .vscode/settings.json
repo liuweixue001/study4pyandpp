@@ -70,6 +70,8 @@
         "fstream": "cpp",
         "sstream": "cpp",
         "functional": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "numeric": "cpp",
+        "random": "cpp"
     }
 }
