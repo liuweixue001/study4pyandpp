@@ -1,24 +1,28 @@
 #include <iostream>
 
 template<typename T>
-T binarySearch(T arr[], T val, int lens)
+T binarySearch(T *arr, T val, int lens)
 {
     int left = 0;
-    int right = lens-1;
-    while(left<=right)
+    int right = lens - 1;
+    while (left <= right)
     {
-        int mid = (left + right) / 2;
-        if(mid==val)
+        int med = (left + right) / 2;
+        std::cout << left << " " << right << std::endl;
+        if (arr[med] == val)
         {
-            return mid;
+            std::cout << 1 << std::endl;
+            return med;
         }
-        else if(mid>val)
+        else if (val < arr[med])
         {
-            right = mid-1;
+            std::cout << 2 << std::endl;
+            right = med-1;
         }
         else
         {
-            left=mid+1;
+            std::cout << 3 << std::endl;
+            left = med+1;
         }
     }
     return -1;
@@ -27,7 +31,7 @@ T binarySearch(T arr[], T val, int lens)
 int main() {
     int nums[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     
-    int target = 11;
+    int target = 5;
 
     int result = binarySearch(nums, target, sizeof(nums)/sizeof(int));
 
