@@ -31,6 +31,16 @@ int main()
     }
     std::cout << std::endl;
 
+    auto [a2, b2, c2] = test;
+    std::cout << a2 << std::endl;
+    std::cout << b2 << std::endl;
+    for (const auto& value: c2)
+    {
+        std::cout << value << " ";
+    }
+    std::cout << std::endl;
+
+
 
     return 0;
 }
