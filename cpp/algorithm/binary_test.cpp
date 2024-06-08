@@ -31,7 +31,7 @@ T binarySearch(T *arr, T val, int lens)
 int main() {
     int nums[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     
-    int target = 5;
+    int target = 6;
 
     int result = binarySearch(nums, target, sizeof(nums)/sizeof(int));
 
